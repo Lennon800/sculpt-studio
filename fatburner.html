@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Fat Burner Session</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border: 1px solid #000;
+    }
+
+    h1 {
+      text-align: center;
+      color: #000;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .author {
+      text-align: center;
+      font-size: 16px;
+      color: #000;
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #000;
+      background-color: #fff;
+      color: #000;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    .thank-you {
+      display: none;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 30px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #555;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Free Fat Burner Session</h1>
+    <div class="author">By Lennon Raj</div>
+
+    <!-- Form -->
+    <form id="fatburnerForm">
+      <div class="input-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="input-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Thank You Message -->
+    <div id="thankYouMessage" class="thank-you">Thank you for registering!</div>
+
+    <a class="back-link" href="sculpt.html">← Back to Sculpt Studio</a>
+  </div>
+
+  <script>
+    document.getElementById("fatburnerForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      // Hide the form
+      document.getElementById("fatburnerForm").style.display = "none";
+
+      // Show thank you message
+      document.getElementById("thankYouMessage").style.display = "block";
+    });
+  </script>
+</body>
+</html>
